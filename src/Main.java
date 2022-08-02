@@ -1,5 +1,15 @@
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    public static void main(String[] args){
+
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName = lastName + " " + firstName + " " + middleName;
+        System.out.printf("ФИО сотрудника -%s\n", fullName);
+
+        System.out.println("Данные ФИО сотрудника для заполнения отчетеа -" + fullName.toUpperCase());
+
+        fullName = "Иванов Семён Семёнович";
+        System.out.println(fullName.replace("ё","е"));
     }
 }
